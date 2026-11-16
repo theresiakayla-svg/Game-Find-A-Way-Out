@@ -1,5 +1,6 @@
 #include <ncurses.h>   
 #include <string>      
 #include <vector>       
-#include <ctime>       
+#include <ctime>
+       
 using namespace std;
