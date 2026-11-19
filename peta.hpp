@@ -1,3 +1,9 @@
+const int JUMLAH_LEVEL = 3;
+
+string NAMA_LEVEL[JUMLAH_LEVEL] = { "Pemanasan", "Lorong Berliku", "Labirin Sesat" };
+
+int WAKTU_LEVEL[JUMLAH_LEVEL] = { 180, 150, 240 };
+
 vector<string> PETA_LEVEL[JUMLAH_LEVEL] = {
     {
         "#####################",

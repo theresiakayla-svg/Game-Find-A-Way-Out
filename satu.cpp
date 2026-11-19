@@ -2,7 +2,5 @@
 #include <string>      
 #include <vector>       
 #include <ctime>
-       
-using namespace std;
 
-return 0;
+using namespace std;
