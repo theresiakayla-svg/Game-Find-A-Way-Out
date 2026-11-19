@@ -4,3 +4,5 @@
 #include <ctime>
        
 using namespace std;
+
+return 0;
