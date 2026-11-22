@@ -2,8 +2,12 @@
 #include <string>      
 #include <vector>       
 #include <ctime>
-
 using namespace std;
+
+const int  JUMLAH_LEVEL = 3;
+string NAMA_LEVEL[JUMLAH_LEVEL] ={"pemanasan", "lorong berliku", "labirin sesat"};
+int WAKTU_LEVEL[JUMLAH_LEVEL]= {30, 50, 70};
+
 
 #include "peta.hpp"
 
@@ -13,6 +17,13 @@ const int KALAH_WAKTU   = 3;
 const int KE_MENU       = 4;  
 
 vector<string> peta;        
+int pemainBaris, pemainKolom;   
+bool punyaKunci;            
+int langkah;                
+int waktuTerpakai;          
+string pesan;               
+int levelTerbuka = 1;
+
 void siapkanwarna(){
  if (has_color()){
   start_color();
@@ -23,10 +34,4 @@ void siapkanwarna(){
   init_pair(4, COLOR_RED, COLOR_BLACK);
  }
 }
-int pemainBaris, pemainKolom;   
-bool punyaKunci;            
-int langkah;                
-int waktuTerpakai;          
-string pesan;               
-int levelTerbuka = 1;
  
